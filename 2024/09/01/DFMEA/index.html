@@ -7,7 +7,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/Asuka_Langley_Soryu%20.jpg">
 <meta property="article:published_time" content="2024-09-01T00:14:26.000Z">
-<meta property="article:modified_time" content="2024-09-01T14:40:57.644Z">
+<meta property="article:modified_time" content="2024-09-02T23:27:07.602Z">
 <meta property="article:author" content="Vito Wang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/img/Asuka_Langley_Soryu%20.jpg"><link rel="shortcut icon" href="/img/NERV_Logo%20.jpg"><link rel="canonical" href="http://example.com/2024/09/01/DFMEA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-09-01 22:40:57'
+  postUpdate: '2024-09-03 07:27:07'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -152,113 +152,63 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Asuka_Langley_Soryu%20.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/asuka-3.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Vito-Blog"><span class="site-name">Vito-Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Design Failure Mode and Effects Analysis-Concepts and Practice</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-01T00:14:26.000Z" title="Created 2024-09-01 08:14:26">2024-09-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-01T14:40:57.644Z" title="Updated 2024-09-01 22:40:57">2024-09-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Design Failure Mode and Effects Analysis-Concepts and Practice"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><font color = "red"><strong>It should be noted that this article is intended for personal use only and is not to be used for commercial purposes. I utilise the videos and articles created by Native English Engineers to enhance my English listening and writing skills. This approach enables me to gain the knowledge required for future career advancement and facilitates the improvement of my language proficiency. I extend my gratitude to the creators of this valuable resource.</strong></font> </p>
-<h1 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h1><h2 id="1-1-Introduction"><a href="#1-1-Introduction" class="headerlink" title="1.1 Introduction"></a>1.1 Introduction</h2><p>Hello and welcome  to the course on design  failure mode and effects analysis.</p>
-<p>I’ll be your <mark>instructor</mark> for the course.</p>
-<p>I’m a mechanical design engineer by profession and i worked in automotive R&amp;D and product development for more than fives years.</p>
-<p>And i have been part of projects from concept to production stage through my experience designing systems.</p>
-<p>Our found DFMEA  is a <mark>critical</mark> tool in understanding  the system and designing effectively  <mark>taking into acccount</mark> the risk involved in designing mechanical systems.</p>
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Asuka_Langley_Soryu%20.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/asuka-3.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Vito-Blog"><span class="site-name">Vito-Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Design Failure Mode and Effects Analysis-Concepts and Practice</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-01T00:14:26.000Z" title="Created 2024-09-01 08:14:26">2024-09-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-02T23:27:07.602Z" title="Updated 2024-09-03 07:27:07">2024-09-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Design Failure Mode and Effects Analysis-Concepts and Practice"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><font color = "red"><strong>It should be noted that this article is intended for personal use only and is not to be used for commercial purposes. I utilise the videos and articles created by Native English Engineers to enhance my English listening and writing skills. This approach enables me to gain the knowledge required for future career advancement and facilitates the improvement of my language proficiency. I extend my gratitude to the creators of this valuable resource.</strong></font> </p>
+<h1 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h1><h2 id="1-1-Introduction"><a href="#1-1-Introduction" class="headerlink" title="1.1 Introduction"></a>1.1 Introduction</h2><p><img src="C:\Users\Vito\AppData\Roaming\marktext\images\2024-09-02-19-36-55-1725277001875.png"></p>
+<p>Hello and welcome  to the course on design  failure mode and effects analysis.</p>
+<p>I’ll be your <mark>instructor</mark> for the course.I’m a mechanical design engineer by profession and i worked in automotive R&amp;D and product development for more than fives years.</p>
+<p>And i have been part of projects from concept to production stage.Through my experience designing systems.I found DFMEA  is a <mark>critical</mark> tool in understanding  the system and designing effectively  <mark>taking into acccount</mark> the risk involved in designing mechanical systems.</p>
 <p>So what will this be about ?</p>
-<p>In this course will primarily learn about preparing to defend me from mechanical systems or products.</p>
-<p>We will cover the concepts involved in the DFMEA like what is failure mode?</p>
-<p>How do you define a failure mode?</p>
-<p>What are the causes or mechanisms of failure?</p>
-<p>What are the possible effects and what do we mean by severity, occurrence and detection in the context</p>
-<p>of mechanical design?</p>
-<p>Then we’ll have a look at what our boundary diagrams and parameter diagrams, which are very important</p>
-<p>tools to understand the overall system before going into the actual Levemir.</p>
-<p>Then we will go through a familiar walkthrough of an example and basically understand the overall step</p>
-<p>by step process of preparing the FMU.</p>
-<p>So the main deliverable and learning outcome of this course would be to develop a strong, basic understanding</p>
-<p>of how to start preparing effectively and productivity from you.</p>
-<p>So the basic underlying concepts will be made clear in this course, and we will understand a lot about</p>
-<p>why we are doing it rather than only understanding of what we are doing.</p>
+<p>In this course will <mark>primarily</mark> learn about preparing to DFMEA from mechanical systems or products. We will cover the concepts involved in the DFMEA like what is failure mode? How do you define a failure mode? What are the causes or mechanisms of failure? What are the possible effects and what do we mean by <mark>severity</mark>, occurrence and detection in the context of mechanical design?</p>
+<p>Then we’ll have a look at what our boundary diagrams and parameter diagrams, which are very important tools to understand the overall system before going into the actual DFMEA. Then we will go through a familiar walk through of an example and basically understand the overall step by step process of preparing the DFMEA.</p>
+<p>So the main deliverable and learning outcome of this course would be to develop a strong, basic understanding of how to start preparing effectively and productive DFMEA. </p>
+<p>So the basic underlying concepts will be made clear in this course, and we will understand a lot about why we are doing it rather than only understanding of what we are doing.</p>
 <p>So if you are a mechanical design engineer who is into designing systems and into product development,</p>
-<p>then this course should be really useful to you in preparing you for creating effective me.</p>
-<h2 id="1-2-Risk-associated-in-Mechanical-design-and-need-for-DFMEA"><a href="#1-2-Risk-associated-in-Mechanical-design-and-need-for-DFMEA" class="headerlink" title="1. 2 Risk associated in Mechanical design and need for DFMEA"></a>1. 2 Risk associated in Mechanical design and need for DFMEA</h2><p>Hello and welcome to the course before we go in depth into the deal for me.</p>
-<p>First, let us understand why.</p>
-<p>Why should we do a deal for me?</p>
-<p>So whenever we are designing mechanical systems or products, there is always some risk involved.</p>
-<p>There is a famous Murphy’s Law which states that anything that can go wrong will go wrong, which means</p>
-<p>that if there is a possibility of a failure to occur, it will eventually occur, whether sooner or</p>
-<p>later the same cases with mechanical systems.</p>
-<p>So mechanical systems can and will fail.</p>
-<p>And that is true for any system as well.</p>
-<p>Whether they are designing a software, whether designing a building or a bridge or whether they are</p>
-<p>designing even organization’s systems will fail.</p>
-<p>And we have to design in such a way that we reduce the risk so that we need to account for the risk</p>
+<p>then this course should be really useful to you in preparing you for creating effective DFMEA.</p>
+<h2 id="1-2-Risk-associated-in-Mechanical-design-and-need-for-DFMEA"><a href="#1-2-Risk-associated-in-Mechanical-design-and-need-for-DFMEA" class="headerlink" title="1. 2 Risk associated in Mechanical design and need for DFMEA"></a>1. 2 Risk associated in Mechanical design and need for DFMEA</h2><p>Hello and welcome to the course before we go in depth into the DFMEA.</p>
+<p>First, let us understand why. Why should we do a deal for me?</p>
+<p>So whenever we are designing mechanical systems or products, there is always some risk involved. There is a famous Murphy’s Law which states that anything that can go wrong will go wrong, which means that if there is a possibility of a failure to occur, it will eventually occur, whether sooner or later the same cases with mechanical systems.</p>
+<p>So mechanical systems can and will fail. And that is true for any system as well.</p>
+<p>Whether they are designing a software, whether designing a building or a bridge or whether they are designing even organizations. systems will fail and we have to design in such a way that we reduce the risk so that we need to account for the risk</p>
 <p>and we need to calculate the risk that becomes a key activity when designing systems.</p>
-<p>So risk mitigation and designing mechanical products to have the least number of failures is very important</p>
-<p>for the business as well as the reputation of a manufacturer.</p>
+<p>So risk mitigation and designing mechanical products to have the least number of failures is very important for the business as well as the reputation of a manufacturer.</p>
 <p>So let’s say you’re designing a mechanical system.</p>
 <p>Let’s say you’re designing a device which has to hold some amount of load.</p>
-<p>Now, if when it goes to the customer, when it goes to the user, it fails, that is going to damage</p>
-<p>the reputation of the manufacturer.</p>
-<p>And also, in worst cases, it is going to be a safety hazard.</p>
-<p>Hence, it becomes very important to account for all possible ways in which that device will fail,</p>
-<p>to make sure that we are testing it for all possible worst cases and designing for it.</p>
-<p>So designing to avoid failure.</p>
+<p>Now, if when it goes to the customer, when it goes to the user, it fails, that is going to damage the reputation of the manufacturer. And also, in worst cases, it is going to be a safety hazard. Hence, it becomes very important to account for all possible ways in which that device will fail, to make sure that we are testing it for all possible worst cases and designing for it. So designing to avoid failure.</p>
 <p>First time when we are designing complex systems can become very tricky, especially when dealing with</p>
 <p>mechanical systems, because not all risk can be known in the design phase itself.</p>
-<p>So when we are designing mechanical systems, which are highly complex, so let’s say designing a vehicle,</p>
-<p>a car from scratch, so you can’t expect the car to be mature in its design for the first time, you</p>
-<p>design and analyze it.</p>
-<p>That has to be a lot of exhaustive testing which has to take place and that testing is done to find</p>
-<p>out what are the possible failure modes and hence design for those failure modes.</p>
-<p>And the design will mature.</p>
-<p>So it is always tricky to design first time without any failure.</p>
+<p>So when we are designing mechanical systems, which are highly complex, so let’s say designing a vehicle, a car from scratch, so you can’t expect the car to be mature in its design for the first time, you design and analyze it.</p>
+<p>That has to be a lot of exhaustive testing which has to take place and that testing is done to find out what are the possible failure modes and hence design for those failure modes.</p>
+<p>And the design will mature. So it is always tricky to design first time without any failure.</p>
 <p>That is generally not the case in mechanical systems.</p>
 <p>Mechanical systems require a good amount of testing, actually testing for the proven.</p>
-<p>There is also one of the reason why a mechanical product development as a practice is generally considered</p>
-<p>more difficult as compared to, let’s say, a software product development.</p>
-<p>So when you are developing a software, when you’re coding, you can debug it easily, but you cannot</p>
-<p>debug a mechanical system design that easily.</p>
+<p>There is also one of the reason why a mechanical product development as a practice is generally considered more difficult as compared to, let’s say, a software product development.</p>
+<p>So when you are developing a software, when you’re coding, you can debug it easily, but you cannot debug a mechanical system design that easily.</p>
 <p>You need a good amount of testing.</p>
-<p>And so it is very important that the mechanical products are physically tested in product development</p>
-<p>office.</p>
-<p>But even if they are tested, all possible ways in which the product will fail may not have been recorded</p>
-<p>and hence designed for even in the product development phase.</p>
-<p>So this possibility is always that we cannot say that 100 percent out of the product and all of the</p>
-<p>failure modes, all of the possible failure modes are covered in the testing.</p>
+<p>And so it is very important that the mechanical products are physically tested in product development office.</p>
+<p>But even if they are tested, all possible ways in which the product will fail may not have been recorded and hence designed for even in the product development phase.</p>
+<p>So this possibility is always that we cannot say that 100 percent out of the product and all of the failure modes, all of the possible failure modes are covered in the testing.</p>
 <p>So that confidence level is generally not 100 percent.</p>
-<p>It can be either 80 percent or maybe 90 percent, or it cannot be 100 percent, because there always</p>
-<p>be new types of failure modes which may pop up, especially when we are dealing with complex systems.</p>
-<p>And most importantly, if the failures happen in the hands of the customer, then it can be detrimental</p>
-<p>to the success of the product, accounting for the risk and hence documenting it is very important for</p>
-<p>designing mechanical systems.</p>
-<p>So it has to be taken a lot of care when we are designing systems that we are accounting for the possible</p>
-<p>risks involved when someone is using that mechanical system.</p>
-<p>So if you are designing, let’s say, a system which is dealing with the safety of individuals, there</p>
-<p>has to be utmost care in making sure all of the risks have been documented and have been accounted for</p>
-<p>before releasing the design for production.</p>
-<p>So here is a graph of risk with this product development stages, so the risk involved in design stage</p>
-<p>is generally very low.</p>
-<p>If you find any errors or issues in the design through simulation or analysis, it’s easy to change</p>
-<p>the design with no major cost impact.</p>
-<p>But as we advance in the product development stages, if the issues get highlighted at the production</p>
-<p>stage, then it will be considered as high risk and it will incur heavy costs because we have to change</p>
-<p>the assembly lines.</p>
-<p>We have to change the assembly infrastructure, the production stages when the design has been frozen</p>
-<p>and the design has been handed over from the engineering team to the production team.</p>
-<p>So these issues, when they hide it from the production team, they generally incur heavy cost and lead</p>
-<p>to a lot of changes.</p>
-<p>Even worse than that would be issues which are highlighted when it’s in the field, when the product</p>
-<p>is in the field, in the hands of the customer.</p>
-<p>That is after sales.</p>
+<p>It can be either 80 percent or maybe 90 percent, or it cannot be 100 percent, because there always be new types of failure modes which may pop up, especially when we are dealing with complex systems.</p>
+<p>And most importantly, if the failures happen in the hands of the customer, then it can be detrimental to the success of the product, accounting for the risk and hence documenting it is very important for designing mechanical systems.</p>
+<p>So it has to be taken a lot of care when we are designing systems that we are accounting for the possible risks involved when someone is using that mechanical system.</p>
+<p>So if you are designing, let’s say, a system which is dealing with the safety of individuals, there has to be a most care in making sure all of the risks have been documented and have been accounted for before releasing the design for production.</p>
+<p>So here is a graph of risk with this product development stages, so the risk involved in design stage is generally very low.</p>
+<p>If you find any errors or issues in the design through simulation or analysis, it’s easy to change the design with no major cost impact.</p>
+<p>But as we advance in the product development stages, if the issues get highlighted at the production stage, then it will be considered as high risk and it will incur heavy costs because we have to change the assembly lines.</p>
+<p>We have to change the assembly infrastructure, the production stages when the design has been frozen and the design has been handed over from the engineering team to the production team.</p>
+<p>So these issues, when they hide it from the production team, they generally incur heavy cost and lead to a lot of changes.</p>
+<p>Even worse than that would be issues which are highlighted when it’s in the field, when the product is in the field, in the hands of the customer. That is after sales.</p>
 <p>So the risk is much higher because it is not only cost which is incurred, it is also a matter of reputation.</p>
 <p>So then the question arises, how do we account for risk and documented?</p>
-<p>So we can do that by understanding, analyzing and documenting the failure modes that causes and that</p>
-<p>effects and devise testing procedures to capture them.</p>
+<p>So we can do that by understanding, analyzing and documenting the failure modes that causes and that effects and devise testing procedures to capture them.</p>
 <p>And finally, to design in such a way that we are avoiding their occurrences.</p>
-<p>And the major tool for doing that is BFM.</p>
-<p>You give me a sense of a design failure mode effect analysis.</p>
-<p>So the DSM is a tool to evaluate and minimize the risk involved in mechanical design.</p>
+<p>And the major tool for doing that is DFMEA.</p>
+<p>DFMEA is  design failure mode effect analysis.</p>
+<p>So the DFMEA is a tool to evaluate and minimize the risk involved in mechanical design.</p>
 <p>Actually, more than a tool to make can also be a framework for the design engineer to design systems.</p>
-<p>So David Muir is covering all of the possible considerations when it comes to design.</p>
-<p>It’s not only for its strength, it’s not only for various functional requirements, but the overall</p>
-<p>performance of the product can be captured in the image.</p>
-<p>And that is why it is such a versatile and very useful tool and framework for design engineers to design</p>
-<p>products.</p>
+<p>So DFMEA is covering all of the possible considerations when it comes to design.</p>
+<p>It’s not only for its strength, it’s not only for various functional requirements, but the overall performance of the product can be captured in the DFMEA.</p>
+<p>And that is why it is such a versatile and very useful tool and framework for design engineers to design products.</p>
 <p>And also, it becomes a record and history of the product or the system or part being designed.</p>
 <h2 id="1-3-What-DFMEA-accommplishes"><a href="#1-3-What-DFMEA-accommplishes" class="headerlink" title="1.3 What DFMEA accommplishes"></a>1.3 What DFMEA accommplishes</h2><p>So apart from accounting and recording the risk associated with the design, what does the FMJ design</p>
 <p>engineers to do?</p>
